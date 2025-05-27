@@ -28,7 +28,7 @@ target/
 /.nb-gradle/
 build/
 application.properties
-Dockerfile
+
 !**/src/main/**/build/
 !**/src/test/**/build/
 
