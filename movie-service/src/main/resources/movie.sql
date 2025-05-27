@@ -1,35 +1,37 @@
 use movie_booking_system;
 
-CREATE TABLE IF NOT EXISTS `showtime` (
-                                          `showtime_id` int NOT NULL AUTO_INCREMENT,
+create table `show-time`
+(
+    id              bigint       not null
+        primary key,
+    available_seats int          not null,
+    theater         varchar(255) null,
+    time            datetime(6)  null,
+    movie_id        bigint       null,
+    created_at      datetime(6)  null,
+    created_by      varchar(255) null,
+    updated_at      datetime(6)  null,
+    updated_by      varchar(255) null
+);
 
-                                          `available_seats` int NOT NULL,
-                                          `theater` varchar(50) NOT NULL,
-    `created_at` TIMESTAMP NOT NULL,
-    `created_by` varchar(50) NOT NULL,
-    `updated_at` TIMESTAMP DEFAULT NULL,
-    `updated_by` varchar(50) DEFAULT NULL,
-    PRIMARY KEY (`showtime_id`)
-    );
-
-CREATE TABLE IF NOT EXISTS `movie_microservice` (
-    `movie_id` int NOT NULL AUTO_INCREMENT,
-    `title` varchar(100) NOT NULL,
-    `description` varchar(50) NOT NULL,
-    `genre` varchar(20) NOT NULL,
-    `rating` double NOT NULL,
-    `showtime_id` int NOT NULL,
-    `created_at` TIMESTAMP NOT NULL,
-    `created_by` varchar(50) NOT NULL,
-    `updated_at` TIMESTAMP DEFAULT NULL,
-    `updated_by` varchar(50) DEFAULT NULL,
-    PRIMARY KEY (`movie_id`),
-    FOREIGN KEY (showtime_id) REFERENCES showtime(showtime_id)
-    );
+create table `movie-microservice`
+(
+    id          bigint       not null
+        primary key,
+    description varchar(255) null,
+    genre       varchar(255) null,
+    rating      double       null,
+    title       varchar(255) null,
+    showtime_id int          not null,
+    created_at  datetime(6)  null,
+    created_by  varchar(255) null,
+    updated_at  datetime(6)  null,
+    updated_by  varchar(255) null
+);
 
 use movie_booking_system;
 
-INSERT INTO `showtime` (`theater`,`available_seats`,`created_at`, `created_by`)
+INSERT INTO `showtimeDto` (`theater`,`available_seats`,`created_at`, `created_by`)
 VALUES ('national Theater',45,CURDATE(),'DBA');
 
 use movie_booking_system;

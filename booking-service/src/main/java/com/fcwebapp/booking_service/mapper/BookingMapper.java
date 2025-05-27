@@ -1,5 +1,8 @@
 package com.fcwebapp.booking_service.mapper;
 
+import com.fcwebapp.booking_service.dto.BookingRequest;
+import com.fcwebapp.booking_service.entity.Booking;
+
 import java.util.List;
 
 public class BookingMapper {

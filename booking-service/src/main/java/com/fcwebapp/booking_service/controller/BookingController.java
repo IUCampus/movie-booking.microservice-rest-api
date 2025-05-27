@@ -1,8 +1,12 @@
 package com.fcwebapp.booking_service.controller;
 
+import com.fcwebapp.booking_service.config.BookingServiceProxy;
+import com.fcwebapp.booking_service.dto.BookingRequest;
+import com.fcwebapp.booking_service.service.impl.BookingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.fcwebapp.pricing_service.dto.PricingDto;
 
 import java.util.List;
 
@@ -29,10 +33,9 @@ public class BookingController {
     }
 
     @GetMapping("{movieId}")
-    public ResponseEntity<BookingRequest> getMovieBooking(@PathVariable Long movieId) {
-        BookingRequest bookingRequest = bookingServiceProxy.getPricingForMovie(movieId);
-        return bookingRequest == null ?
-                ResponseEntity.notFound().build() : ResponseEntity.ok(bookingRequest);
+    public ResponseEntity<PricingDto> getMovieBooking(@PathVariable Long movieId) {
+        PricingDto pricingResponse = bookingServiceProxy.getPricingForMovie(movieId);
+        return pricingResponse == null ?
+                ResponseEntity.notFound().build() : ResponseEntity.ok(pricingResponse);
     }
 }
-

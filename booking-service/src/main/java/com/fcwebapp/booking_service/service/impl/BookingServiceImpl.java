@@ -1,5 +1,10 @@
 package com.fcwebapp.booking_service.service.impl;
 
+import com.fcwebapp.booking_service.dto.BookingRequest;
+import com.fcwebapp.booking_service.entity.Booking;
+import com.fcwebapp.booking_service.mapper.BookingMapper;
+import com.fcwebapp.booking_service.repository.BookingRepository;
+import com.fcwebapp.booking_service.service.BookingService;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +21,7 @@ public class BookingServiceImpl implements BookingService {
 
     @Override
     public BookingRequest createBooking(BookingRequest bookingRequest) {
-        Booking booking = BookingMapper.mapToBooking(bookingRequest);
+        Booking booking = new BookingMapper().mapToBooking(bookingRequest);
         Booking savedBooking = bookingRepository.save(booking);
         return BookingMapper.mapToBookingRequest(savedBooking);
     }
