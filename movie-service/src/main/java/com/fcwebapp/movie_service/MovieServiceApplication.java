@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
 		),
 		externalDocs = @ExternalDocumentation(
 				description = "Movie Booking System GitHub Docs",
-				url = "https://github.com/IUCampus/movie-booking.microservice/tree/master/movie-service"
+				url = "https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/movie-service"
 		)
 )
 
