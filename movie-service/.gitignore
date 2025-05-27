@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-*.properties
+
 
 ### IntelliJ IDEA ###
 .idea
@@ -27,6 +27,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+application.properties
 Dockerfile
 !**/src/main/**/build/
 !**/src/test/**/build/
