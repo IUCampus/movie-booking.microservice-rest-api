@@ -3,8 +3,6 @@ FROM maven:3.8.5-openjdk-17-slim AS build
 
 WORKDIR /app
 
-# Copy pom.xml and download dependencies first (use Docker cache efficiently)
-COPY pom.xml .
 RUN mvn dependency:go-offline -B
 
 # Build the project
