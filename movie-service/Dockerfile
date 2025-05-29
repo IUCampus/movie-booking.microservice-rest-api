@@ -3,9 +3,6 @@ FROM maven:3.8.5-openjdk-17-slim AS build
 
 WORKDIR /app
 
-# Build the project
-RUN mvn clean package -DskipTests
-
 # Stage 2: Run
 FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
