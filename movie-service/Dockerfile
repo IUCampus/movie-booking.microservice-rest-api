@@ -5,7 +5,7 @@ COPY . .
 FROM openjdk:17.0.1-jdk-slim
 
 # Copy built jar from the first stage
-COPY --from=build /target/movie-service-0.0.1-SNAPSHOT.jar movie-service.jar
+COPY --from=build /target/*.jar movie-service.jar
 
 EXPOSE 8003
 ENTRYPOINT ["java", "-jar", "movie-service.jar"]
