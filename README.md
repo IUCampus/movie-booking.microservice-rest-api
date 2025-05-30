@@ -34,7 +34,7 @@
 
 ### Booking Microservice Route
 - *BookingService* : (https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/booking-service)
----
+  
 ### **Creating a New BookingService**
   
 **Method:** `POST`  
@@ -51,6 +51,8 @@
 **Method:** `POST`  
 
 **Body:**
+
+---
 
 ### Future Work
 
