@@ -22,6 +22,8 @@
 -  Step 18 - Setting up Spring Cloud API Gateway
 -  Step 19 - Enabling Discovery Locator with Eureka for Spring Cloud Gateway
 
+---
+
 ### Technologies Used
 
 - Docker
@@ -31,6 +33,8 @@
   - Load Balancing with Spring Cloud LoadBalancer (replacing Ribbon)
   - API Gateway with Spring Cloud Gateway (instead of Zuul)
   - Distributed Tracing with Zipkin
+
+---    
 
 ### Booking Microservice Route
 - *BookingService* : (https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/booking-service)
@@ -62,6 +66,6 @@
 - CI/CD Pipeline Setup – Implement automated testing, integration, and deployment workflows.
 - Monitoring & Logging Implementation – Set up dashboards and alerts using Micrometer and ELK to monitor system health.
 - Load Testing & Optimization – Conduct stress testing to ensure performance under high traffic and optimize accordingly.
-- Iterative Feature Expansion – Gradually integrate additional services such as review & rating, notifications, and promotional systems![image](https://github.com/user-attachments/assets/053e033f-1bef-4597-a06c-80232b30cfa8)
+- Iterative Feature Expansion – Gradually integrate additional services such as review & rating, notifications, and promotional systems.
 
 
