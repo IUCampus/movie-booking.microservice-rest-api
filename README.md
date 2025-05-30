@@ -41,9 +41,11 @@
 
 **Body:**
 
+---
+
 ### Movie Microservice Route
 - *MovieService* : (https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/movie-service)
----
+  
 ### **Creating a New MovieService**
   
 **Method:** `POST`  
