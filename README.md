@@ -32,21 +32,32 @@
   - API Gateway with Spring Cloud Gateway (instead of Zuul)
   - Distributed Tracing with Zipkin
 
-### MainActivity Route
-- *MainActivity* : (https://github.com/IUCampus/mobile-software-engineering-02/blob/main/app/src/main/java/franciswebapp/com/devquizapp/MainActivity.kt)
+### Booking Microservice Route
+- *BookingService* : (https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/booking-service)
 ---
-### **Creating a New MainActivity**
+### **Creating a New BookingService**
   
 **Method:** `POST`  
 
 **Body:**
 
-Requirement Gathering – Collaborate with stakeholders to finalize feature requirements and system specifications.
-Architecture Design – Create detailed architectural diagrams and define service interfaces (APIs) and data models.
-MVP Development – Build and deploy a minimum viable product (MVP) focusing on core functionalities (user auth, movie listing, seat booking).
-CI/CD Pipeline Setup – Implement automated testing, integration, and deployment workflows.
-Monitoring & Logging Implementation – Set up dashboards and alerts using Micrometer and ELK to monitor system health.
-Load Testing & Optimization – Conduct stress testing to ensure performance under high traffic and optimize accordingly.
-Iterative Feature Expansion – Gradually integrate additional services such as review & rating, notifications, and promotional systems![image](https://github.com/user-attachments/assets/053e033f-1bef-4597-a06c-80232b30cfa8)
+### Movie Microservice Route
+- *MovieService* : (https://github.com/IUCampus/movie-booking.microservice-rest-api/tree/main/movie-service)
+---
+### **Creating a New MovieService**
+  
+**Method:** `POST`  
+
+**Body:**
+
+### Future Work
+
+- Requirement Gathering – Collaborate with stakeholders to finalize feature requirements and system specifications.
+- Architecture Design – Create detailed architectural diagrams and define service interfaces (APIs) and data models.
+- MVP Development – Build and deploy a minimum viable product (MVP) focusing on core functionalities (user auth, movie listing, seat booking).
+- CI/CD Pipeline Setup – Implement automated testing, integration, and deployment workflows.
+- Monitoring & Logging Implementation – Set up dashboards and alerts using Micrometer and ELK to monitor system health.
+- Load Testing & Optimization – Conduct stress testing to ensure performance under high traffic and optimize accordingly.
+- Iterative Feature Expansion – Gradually integrate additional services such as review & rating, notifications, and promotional systems![image](https://github.com/user-attachments/assets/053e033f-1bef-4597-a06c-80232b30cfa8)
 
 
